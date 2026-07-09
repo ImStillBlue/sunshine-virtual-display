@@ -37,11 +37,12 @@ running when you're not streaming.
 
 - **Dummy HDMI plugs** work but are a fixed resolution, always present, and cost
   money/ports. Sunveil is dynamic and leaves no trace when idle.
-- **Apollo's** virtual display is **Windows-only** (it relies on SudoVDA). On
-  Linux it can't create a virtual display. Sunveil fills that gap for CachyOS.
-- **Hermes** (an Apollo-for-Linux fork) is a great heavier alternative if you
-  want a purpose-built host; Sunveil instead enhances the Sunshine you already
-  run, in ~15 minutes, with stock packages.
+- **[Apollo](https://github.com/ClassicOldSong/Apollo)'s** virtual display is
+  **Windows-only** (it relies on SudoVDA). On Linux it can't create a virtual
+  display. Sunveil fills that gap for CachyOS.
+- **[Hermes](https://github.com/MrOz59/Hermes)** (an Apollo-for-Linux fork) is a
+  great heavier alternative if you want a purpose-built host; Sunveil instead
+  enhances the Sunshine you already run, in ~15 minutes, with stock packages.
 
 ---
 
@@ -64,8 +65,8 @@ running when you're not streaming.
 ## Install
 
 ```bash
-git clone https://github.com/ImStillBlue/sunveil.git
-cd sunveil
+git clone https://github.com/ImStillBlue/sunshine-virtual-display.git
+cd sunshine-virtual-display
 ./install.sh
 ```
 
@@ -223,12 +224,27 @@ Files installed:
 
 ---
 
+## Related projects
+
+The game-streaming ecosystem Sunveil plugs into:
+
+| Project | What it is |
+|---|---|
+| **[Sunshine](https://github.com/LizardByte/Sunshine)** | The self-hosted stream host Sunveil enhances. |
+| **[Moonlight](https://moonlight-stream.org/)** ([GitHub](https://github.com/moonlight-stream)) | The original open-source streaming client, for basically every platform. |
+| **[Apollo](https://github.com/ClassicOldSong/Apollo)** | A Sunshine fork with a **built-in** virtual display — but **Windows-only** (SudoVDA). The inspiration for doing this on Linux. |
+| **[Artemis](https://github.com/ClassicOldSong/moonlight-android)** | Apollo's companion Android client (a moonlight-android fork). Works great as the client for a Sunveil host. |
+| **[Hermes](https://github.com/MrOz59/Hermes)** | An Apollo-for-Linux host fork with its own virtual-display driver — a heavier alternative if you'd rather replace Sunshine than enhance it. |
+| **[krfb](https://invent.kde.org/network/krfb)** | KDE app that ships `krfb-virtualmonitor`, the tool that actually creates the virtual display. |
+
 ## Credits & license
 
 Built on the shoulders of [Sunshine](https://github.com/LizardByte/Sunshine),
-KDE's `krfb-virtualmonitor`, and `kscreen-doctor`. The virtual-monitor approach
-was inspired by community write-ups on running Sunshine headless on Plasma 6
-Wayland.
+KDE's [`krfb-virtualmonitor`](https://invent.kde.org/network/krfb), and
+`kscreen-doctor`. The virtual-monitor approach was inspired by community
+write-ups on running Sunshine headless on Plasma 6 Wayland, and by
+[Apollo](https://github.com/ClassicOldSong/Apollo)'s native virtual-display
+feature on Windows.
 
 MIT — see [LICENSE](LICENSE).
 
