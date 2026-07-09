@@ -1,0 +1,12 @@
+# Local Claude Code project data — not part of the shared repo
+.claude/
+
+# Editor / OS cruft
+*.swp
+*~
+.DS_Store
+
+# Nothing runtime-generated should live in the repo, but just in case:
+hook.log
+state/
+*.sunveil-bak.*
