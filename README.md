@@ -10,6 +10,12 @@ automatically when you disconnect.
 No dummy HDMI plug. No always-on fake display. No Windows. Pure software, built
 for and tested on CachyOS + Plasma 6 Wayland + NVIDIA proprietary drivers.
 
+![Sunveil demo — a phone connects, a virtual display is created at its native resolution, the physical monitors turn off, and everything is restored on disconnect](docs/demo.gif)
+
+> The clip shows the real hook output: a phone connects at 1080×2340@90, the
+> virtual display is created at that exact resolution, the physical monitors are
+> disabled, and on disconnect everything is restored — primary monitor and all.
+
 ---
 
 ## What it does
